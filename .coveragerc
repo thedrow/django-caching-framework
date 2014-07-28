@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = caching_framework
+include = caching_framework/*
+omit = caching_framework/*/tests/*
+       caching_framework/tests/*
+       test_*.*
