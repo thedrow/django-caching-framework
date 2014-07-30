@@ -16,7 +16,7 @@ class TestModel(CachingMixin, Model):
     bar = IntegerField(null=True)
 
     def __str__(self):
-        return 'PK=%d;foo=%s;bar=%s' % (self.pk, self.foo, self.bar)
+        return 'PK=%s;foo=%s;bar=%s' % (self.pk, self.foo, self.bar)
 
     def __eq__(self, other):
         return self.pk == other.pk and self.foo == other.foo and self.bar == other.bar
